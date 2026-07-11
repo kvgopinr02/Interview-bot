@@ -164,39 +164,7 @@
 </div>
 
 <!-- AUTH -->
-<div id="auth" class="screen active">
-  <div class="auth-logo">Interview<span>Bot</span> 🤖</div>
-  <div class="auth-sub">Resume-based AI interviews · 100% Free</div>
-  <div class="auth-card">
-    <div class="auth-tabs">
-      <div class="auth-tab active" onclick="switchTab('login')">Login</div>
-      <div class="auth-tab" onclick="switchTab('register')">Register</div>
-    </div>
-    <div id="loginForm">
-      <div class="afield"><label class="alabel">Email</label><input class="ainput" id="lemail" type="email" placeholder="you@example.com"/></div>
-      <div class="afield"><label class="alabel">Password</label><input class="ainput" id="lpass" type="password" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()"/></div>
-      <button class="abtn" id="lbtn" onclick="doLogin()">Login →</button>
-      <div class="aerr" id="lerr"></div>
-    </div>
-    <div id="registerForm" style="display:none">
-      <div class="afield"><label class="alabel">Full Name</label><input class="ainput" id="rname" type="text" placeholder="Rahul Sharma"/></div>
-      <div class="afield"><label class="alabel">Email</label><input class="ainput" id="remail" type="email" placeholder="you@example.com"/></div>
-      <div class="afield"><label class="alabel">Password</label><input class="ainput" id="rpass" type="password" placeholder="6+ characters" onkeydown="if(event.key==='Enter')doRegister()"/></div>
-      <button class="abtn" id="rbtn" onclick="doRegister()">Create Account →</button>
-      <div class="aerr" id="rerr"></div>
-    </div>
-  </div>
-</div>
 
-<!-- SETUP -->
-<div id="setup" class="screen">
-  <div class="topnav">
-    <div class="upill"><div class="uav" id="uav">R</div><div class="uname" id="uname">User</div></div>
-    <div style="display:flex;gap:8px">
-      <button class="navbtn" onclick="window.location.href='admin.html'">📊 Admin</button>
-      <button class="navbtn danger" onclick="doLogout()">Logout</button>
-    </div>
-  </div>
   <h1 class="hero">Land Your<br><span>Dream Job</span></h1>
   <p class="hsub">Upload resume → AI asks questions based on YOUR actual experience</p>
 
@@ -239,7 +207,6 @@
     <div class="sb">
       <div class="sn">05</div><div class="sl">Go!</div><h3>Start Interview</h3>
       <button class="bgo" id="gobtn" onclick="startInterview()">🚀 &nbsp;Begin Interview</button>
-      <button class="bprev" onclick="loadPrev()">📋 &nbsp;My Past Interviews</button>
       <div id="prevList"></div>
     </div>
   </div>
